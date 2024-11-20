@@ -1,20 +1,29 @@
+import React from "react";
 import { useRouter } from "expo-router";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Pressable, Image } from "react-native";
+import Saly1 from "../../assets/Saly-1.png";
+import colors from "../../constants/colors";
 
 const Start2 = () => {
   const router = useRouter();
+
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Text>d</Text>
+        <Image source={Saly1} width={294} height={419} />
       </View>
       <Text style={styles.hello}>아기랑 사용을 환영해요!</Text>
-      <Button
-        onPress={() => router.push("../start3")}
-        title="카카오로 로그인 하기"
-      />
-      <Button title="구글로 로그인 하기" />
-      <Button title="네이버로 로그인 하기" />
+
+      <View style={{ marginTop: 50 }}>
+        <Pressable
+          onPress={() => router.push("/auth/register")}
+          style={styles.loginButton}
+        >
+          <Text style={{ fontSize: 19, fontWeight: "700", color: "white" }}>
+            로그인 하기
+          </Text>
+        </Pressable>
+      </View>
     </View>
   );
 };
@@ -26,15 +35,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#fff",
   },
-  imageContainer: {
-    width: 294,
-    height: 419,
-    backgroundColor: "#d9d9d9",
-    borderColor: "black",
-  },
+
   hello: {
     fontSize: 24,
     fontWeight: "700",
+    marginTop: 20,
+  },
+
+  loginButton: {
+    width: 345,
+    height: 48,
+    backgroundColor: colors.primary500,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
   },
 });
 

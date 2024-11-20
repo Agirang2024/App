@@ -11,7 +11,7 @@ const colors = {
   gray600: "#131313",
 
   primary0: "#fff9ea",
-  primary00: "#ffedbf",
+  primary100: "#ffedbf",
   primary200: "#ffe194",
   primary300: "#ffd66b",
   primary400: "#ffca40",
