@@ -55,6 +55,8 @@ const RegisterPage = () => {
           secureTextEntry
           placeholder="비밀번호를 입력해주세요."
           autoCapitalize="none"
+          autoCorrect={false}
+          keyboardType="default"
         />
       </View>
       <View style={{ width: 300 }}>
@@ -66,6 +68,8 @@ const RegisterPage = () => {
           secureTextEntry
           placeholder="비밀번호를 다시 한 번 입력해주세요."
           autoCapitalize="none"
+          autoCorrect={false}
+          keyboardType="default"
         />
       </View>
       <CustomButton

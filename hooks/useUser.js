@@ -22,6 +22,10 @@ export const useUser = () => {
         } finally {
           setIsLoading(false);
         }
+      } else {
+        setUser(null);
+        setIsLoading(false);
+        return null;
       }
     };
     checkUser();

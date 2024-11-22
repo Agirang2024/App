@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vince77361.myapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,14 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a3b4bfbb-7362-4bf6-8ac9-ac6e9a55ea72"
+      }
+    }
   }
 }

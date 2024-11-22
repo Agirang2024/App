@@ -49,6 +49,8 @@ const MakeBooks = () => {
           autoCapitalize="none"
           value={character}
           onChangeText={(text) => setCharacter(text.trim())} // onChange 핸들러
+          autoCorrect={false}
+          keyboardType="default"
         />
       </View>
       <View>

@@ -42,7 +42,9 @@ const LoginPage = () => {
           value={email}
           onChangeText={setEmail}
           placeholder="이메일을 입력해주세요."
+          autoCorrect={false}
           autoCapitalize="none"
+          keyboardType="default"
         />
       </View>
       <View style={{ width: 300 }}>
@@ -54,6 +56,8 @@ const LoginPage = () => {
           secureTextEntry
           placeholder="비밀번호를 입력해주세요."
           autoCapitalize="none"
+          autoCorrect={false}
+          keyboardType="default"
         />
       </View>
 

@@ -75,6 +75,8 @@ const Start4 = () => {
         value={username}
         onChangeText={setUsername}
         autoCapitalize="none"
+        autoCorrect={false}
+        keyboardType="default"
       />
 
       <Text style={styles.inputlabel}>거주지역이 어디인가요?</Text>
